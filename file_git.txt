@@ -1,0 +1,21 @@
+		9 нужных комманд
+1)git clone https://github.com/Artyom-rgb/useful-files "на месте данной должна быть ссылка вашего проекта
+	конфигурируем гит
+2)git config user.name "Ivanov Ivan" 
+3)git config user.email ivanov.ivan@someuniversity.edu
+	посмотрим историю репозитория
+4)git log
+	текущие изменения
+5)git diff
+	статус репозитория
+5)git status
+	добавим изменённые файлы
+6)git add имя файла, чтобы добавить все файлы можно использовать git add -A
+	закоммитим изменения
+7)git commit -m "added somethink"
+	отправим "запушим" наши изменения в оригинальный репозиторий
+8)git push
+
+	если папака с проектом уже была клонированна, то нужно забрать изменения с оригинального репозитория
+9) git pull
+

@@ -1,0 +1,65 @@
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" On-demand loading
+" мини проводник в файле
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+""" автоматическое добавление скобок
+Plug 'jiangmiao/auto-pairs'
+"colorscheems
+Plug 'ErichDonGubler/vim-sublime-monokai'
+Plug 'morhetz/gruvbox'
+Plug 'blueshirts/darcula'
+Plug 'altercation/vim-colors-solarized'
+" Initialize plugin system
+call plug#end()
+
+
+
+
+"настойка тем
+"colorscheme gruvbox
+"set background=dark
+colorscheme sublimemonokai
+"включаем номера строк
+set number
+"подсветка синтаксиса
+syntax on
+"поиск по файлу
+set incsearch
+set hlsearch
+"умная зависимость от регистра
+set ignorecase
+set smartcase
+set termencoding=utf8
+" Включаем несовместимость настроек с Vi, так как Vi нам и не понадобится
+set nocompatible
+" " Показывать положение курсора всё время.
+set ruler
+
+" Поддержка мыши
+set mouse=a
+set mousemodel=popup
+
+" Скрывать указатель мыши, когда печатаем
+set mousehide
+"Включить автоотступы
+set autoindent
+" " Не переносить строки
+set nowrap
+set tabstop=4
+set shiftwidth=4
+"автоотсупы для новых строк
+"отступы в стиле Си
+set ai
+set cin
+"Включаем "умные" отступы, например, авто отступ после `{`
+set smartindent
+" Дополнительная информация в строке состояния
+set wildmenu
+"""mapping
+map <S-F5> :!python % <CR>
+map <C-n> : NERDTreeToggle<CR>
+map <F5> :!g++ -o file %; ./file <CR>
